@@ -1,27 +1,163 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaili - Geodynamic Modeling Researcher</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
 
-header {
-    background: #0077cc;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
 
-nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
 
-main {
-    padding: 1em;
-    margin: 20px auto;
-    max-width: 800px;
-    line-height: 1.6;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('/images/orogen.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .image-container img {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            z-index: 3;
+            border: 3px solid white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .services {
+            background: #f8f9fa;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .education ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education li {
+            margin-bottom: 20px;
+        }
+
+        .footer-container {
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container">
+            <h1>Kai Li</h1>
+            <p>Geodynamic Modeling | Rift Evolution | Surface Process</p>
+        </div>
+        <div class="image-container">
+            <img src="../images/kaili.jpg" alt="Kai Li">
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="main-section">
+            <h2>About Me</h2>
+            <p>I am Kai Li, a passionate researcher specializing in geodynamic modeling. My work focuses on understanding Earth's complex processes such as rift evolution and mantle plume dynamics. Through cutting-edge computational modeling, I strive to bridge science and application.</p>
+        </section>
+
+        <section id="research" class="services">
+            <h2>Research</h2>
+            <p>My research delves into tectonic interactions, rifted margins, and feedback mechanisms between surface and deep-Earth processes. Tools like ASPECT and FastScape are pivotal in my analysis.</p>
+        </section>
+
+        <section id="contact" class="main-section">
+            <h2>Contact</h2>
+            <p>Email: kaili@geodynamicsresearch.com</p>
+            <p>Phone: +49 123 456 789</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kai Li. All rights reserved.</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </footer>
+</body>
+</html>
 

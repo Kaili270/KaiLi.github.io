@@ -3,24 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geodynamics Researcher</title>
+    <title>Kai Li - Geodynamic Modeling Researcher</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background: #f4f4f4;
+            border-bottom: 1px solid #ccc;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7b4b3a;
+            margin: 0 15px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #fdf6eb 50%, #4F6456 50%);
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #7b4b3a;
+            margin-bottom: 0px;
+            margin-left: 700px; /* Maintain specified position */
+        }
+
+        .hero h1:nth-of-type(2) {
+            font-size: 2em;
+            color: white;
+            margin-top: 70px;
+            margin-left: 800px; /* Maintain specified position */
+        }
+
+        .hero p {
+            font-size: 2rem;
+            color: #333;
+            margin-top: 0;
+            margin-left: 800px; /* Maintain specified position */
+        }
+
+        .hero img {
+            position: absolute;
+            left: 440px;
+            top: 200px;
+            width: 370px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .description {
+            color: white;
+            background-color: #4F6456;
+            padding: 20px;
+            text-align: left;
+            max-width: 1500px;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* New Style for Email and Google Scholar Links */
+        .contact-info {
+            position: fixed;
+            bottom: 10px;
+            right: 50px;
+            font-size: 1pt;
+            text-align: right;
+            color: #333;
+        }
+          .contact-info p:first-of-type {
+        margin-left: 500px; /* Move 20px to the left */
+    }
+        .contact-info a {
+            color: #ADD8E6;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+	.education {
+            position: fixed;
+            bottom: 50px;
+            left:210px;
+            font-size: 1.8rem; /* Font size as requested */
+            color: white; /* Font color as requested */
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Dr. [Your Name] - Geodynamics Researcher</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="research.html">Research</a> |
-            <a href="publications.html">Publications</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
+    <nav>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Research</a>
+            <a href="#">Publications</a>
+            <a href="#">Media</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Kai Li</h1>
+        <h1>Geodynamic Modelling | Rift Evolution | Orogenic Inheritance | Surface Process</h1>
+        <p>GFZ-Potsdam, Free University of Berlin</p>
+        <img src="images/kaili.jpg" alt="Kai Li">
     </header>
-    <main>
-        <h2>Welcome!</h2>
-        <p>I am Dr. [Your Name], a researcher specializing in geodynamics and Earth systems modeling. My work focuses on understanding the dynamics of plate tectonics, mantle convection, crustal deformation, and volcanic processes using advanced computational tools and modeling techniques.</p>
-        <p>Explore my research, publications, and projects to learn more about my contributions to the field of geodynamics.</p>
-    </main>
+
+    <!-- Contact Info Section -->
+    <div class="contact-info">
+        <p>Email: <a href="mailto:kaili@gfz-potsdam.de">kaili@gfz-potsdam.de</a></p>
+        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=Fmo5AlAAAAAJ&hl=en&oi=sra" target="_blank">View Profile</a></p>
+    </div>
+     <!-- Education Section -->
+    <div class="education">
+        <p>-2021-2025: Ph.D. in Geodynamics, GFZ | Free University of Berlin</p>
+        <p>-2016-2019: M.Sc. in Earth Sciences, China University of Geosciences</p>
+        <p>-2012-2016: B.Sc. in Geology, Shandong University of Science and Technology</p>
+    </div> 
+    <footer>
+        <p>&copy; 2024 Kai Li. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
 
