@@ -126,6 +126,70 @@
             color: white; /* Font color as requested */
             text-align: left;
         }
+	/* Responsive Styles */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero h1:nth-of-type(2) {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1.3rem;
+            }
+            .hero img {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            .hero h1:nth-of-type(2) {
+                font-size: 1.5rem;
+                margin-top: 10px;
+            }
+            .hero p {
+                font-size: 1rem;
+                text-align: center;
+            }
+            .hero img {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                text-align: center;
+                padding: 10px;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            .hero h1:nth-of-type(2) {
+                font-size: 1.2rem;
+                margin-top: 5px;
+            }
+            .hero p {
+                font-size: 0.9rem;
+            }
+            .hero img {
+                width: 200px;
+                margin-top: 10px;
+            }
+
+            nav {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 5px 0;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
